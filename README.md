@@ -20,3 +20,5 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 6. Получение данных с удаленных компьютеров в сети **Файл 6-remote-computers-info-detailed.ps1**
 # 6. *Полный подробный отчет (всё сразу)* 
 **Файл full-network-report.ps1**
+
+*Полный подробный отчет (всё сразу) от google gemini* **Файл gemini-full-network-report.ps1**
