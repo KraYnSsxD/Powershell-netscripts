@@ -17,6 +17,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 3. Внешние подключения (какие сайты/сервисы запрашивают) **Файл 3-external-connections.ps1**
 4. Статистика процессов по соединениям **Файл 4-process-connections-stats.ps1**
 5. Активные сеансы (кто подключен к компьютеру) **Файл 5-smb-sessions.ps1**
-6. Получение данных с удаленных компьютеров в сети **7-remote-computers-info-detailed.ps1**
+6. Получение данных с удаленных компьютеров в сети **Файл 7-remote-computers-info-detailed.ps1**
 # 6. *Полный подробный отчет (всё сразу)* 
 **Файл 6-full-network-report.ps1**
