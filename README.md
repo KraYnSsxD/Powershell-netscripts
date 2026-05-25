@@ -10,7 +10,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 .\SCRIPTNAME.PS1
 
-## предназночение скриптов
+## предназначение скриптов
 
 1. Сканирование сети и обнаружение ресурсов **Файл 1-scan-network.ps1**
 2. Активные сетевые соединения с процессами **Файл 2-connections-with-processes.ps1**
