@@ -21,4 +21,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # 6. *Полный подробный отчет (всё сразу)* 
 **Файл full-network-report.ps1**
 
-*Полный подробный отчет от google gemini* **Файл gemini-full-network-report.ps1**
+*Полный подробный отчет от google gemini(вывод скрипта сохраняется в папку с ним же)* **Файл gemini-full-network-report.ps1**
+
+# password-scan-windows.ps1
+скрипт который выводит пароль от wifi сети, работает только на windows из за того что использует *netsh*
