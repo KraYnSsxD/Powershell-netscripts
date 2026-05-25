@@ -6,7 +6,7 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\SCRIPTNAME.PS1
 
-# или
+**или**
 
 .\SCRIPTNAME.PS1
 
