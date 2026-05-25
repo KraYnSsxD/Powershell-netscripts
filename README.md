@@ -1,5 +1,5 @@
 # krsz-netscripts
-# powershell scripts for net-work-scanning\
+powershell scripts for net-work-scanning\
 
 # запуск скриптов выполнять командой
 
