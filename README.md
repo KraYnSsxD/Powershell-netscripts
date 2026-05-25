@@ -21,4 +21,4 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # 6. *Полный подробный отчет (всё сразу)* 
 **Файл full-network-report.ps1**
 
-*Полный подробный отчет (всё сразу) от google gemini* **Файл gemini-full-network-report.ps1**
+*Полный подробный отчет от google gemini* **Файл gemini-full-network-report.ps1**
