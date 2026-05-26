@@ -26,4 +26,4 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 *Полный подробный отчет от google gemini(вывод скрипта сохраняется в папку с ним же)* **Файл gemini-full-network-report.ps1**
 
 # узнать пароль от сети
-**password-scan-windows.ps1** скрипт который выводит пароль от wifi сети, работает только на windows из за того что использует *netsh*
+**password-scan-windows.ps1** скрипт который выводит пароль от wifi сети к которой вы подключены, работает только на windows из за того что использует *netsh*
