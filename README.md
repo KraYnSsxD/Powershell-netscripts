@@ -10,6 +10,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 .\SCRIPTNAME.PS1
 
+
+---
+
+PowerShell.exe -ExecutionPolicy Bypass -File .\password-scan-windows.ps1
+
 ## предназначение скриптов
 
 1. Сканирование сети и обнаружение ресурсов **Файл 1-scan-network.ps1**
