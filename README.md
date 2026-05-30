@@ -6,10 +6,9 @@ powershell scripts for net-work-scanning\
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\SCRIPTNAME.PS1
 
-**или**
+---
 
 .\SCRIPTNAME.PS1
-
 
 ---
 
