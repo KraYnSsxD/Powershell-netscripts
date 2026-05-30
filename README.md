@@ -1,7 +1,7 @@
 # krsz-netscripts
 powershell scripts for net-work-scanning\
 
-# запуск скриптов выполнять командой
+# запуск скриптов выполнять командами
 
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\SCRIPTNAME.PS1
