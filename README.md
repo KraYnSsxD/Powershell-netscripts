@@ -3,16 +3,17 @@ powershell scripts for net-work-scanning\
 
 # запуск скриптов выполнять командами
 
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-.\SCRIPTNAME.PS1
+powershell.exe -ExecutionPolicy Bypass -File "C:\путь_к_скрипту\script.ps1"
 
 ---
 
-.\SCRIPTNAME.PS1
+"Разблокировка" конкретного файла
+Unblock-File -Path ".\имя_скрипта.ps1"
 
 ---
 
-PowerShell.exe -ExecutionPolicy Bypass -File .\password-scan-windows.ps1
+Внутри уже открытого окна PowerShell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 ## предназначение скриптов
 
