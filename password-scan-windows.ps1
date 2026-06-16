@@ -1,2 +1,7 @@
-$ssid = (netsh wlan show interfaces) -match '^\s*SSID' | ForEach-Object { ($_ -split ':',2)[1].Trim() }
-netsh wlan show profile name="$ssid" key=clear
+$profiles = (netsh wlan show profiles) | Select-String "\:(.+)$" | ForEach-Object { $_.Matches.Value.Trim(": ") }
+
+foreach ($profile in $profiles) {
+    Write-Host "--- Профиль: $profile ---" -ForegroundColor Cyan
+    netsh wlan show profile name="$profile" key=clear | Select-String "Содержимое ключа"
+    Write-Host ""
+}
