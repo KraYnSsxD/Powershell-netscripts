@@ -31,3 +31,12 @@ PowerShell.exe -ExecutionPolicy Bypass -File .\password-scan-windows.ps1
 
 # узнать пароль от сети
 **password-scan-windows.ps1** скрипт который выводит пароль от wifi сети к которой вы подключены, работает только на windows из за того что использует *netsh*
+или просто введите эту команду
+---
+
+(netsh wlan show profiles) | Select-String "\:(.+)$" | ForEach-Object {
+    $name = $_.Matches.Value.Trim(": ")
+    netsh wlan show profile name="$name" key=clear
+}
+
+---
