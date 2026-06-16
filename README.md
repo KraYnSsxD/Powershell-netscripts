@@ -44,6 +44,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 ---
 
 комманда для вывода пароля от wifi
+
 (netsh wlan show profiles) | Select-String "\:(.+)$" | ForEach-Object {
     $name = $_.Matches.Value.Trim(": ")
     netsh wlan show profile name="$name" key=clear
