@@ -41,6 +41,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 & { "=== SMB SHARES ==="; Get-SmbShare; "`n=== ARP CACHE ==="; Get-NetNeighbor; " `n=== DNS CACHE ==="; Get-DnsClientCache } > "$home\Desktop\network_report.txt"
 
 после выполнения на рабочем столе появится файл с выводом
+
 ---
 
 комманда для вывода пароля от wifi
