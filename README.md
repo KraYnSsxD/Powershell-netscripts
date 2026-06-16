@@ -37,8 +37,9 @@ PowerShell.exe -ExecutionPolicy Bypass -File .\password-scan-windows.ps1
 
 # скан сети одной командой
 
-& { "=== SMB SHARES ==="; Get-SmbShare; "`n=== ARP CACHE ==="; Get-NetNeighbor; "`n=== DNS CACHE ==="; Get-DnsClientCache } > "$home\Desktop\network_report.txt"
+& { "=== SMB SHARES ==="; Get-SmbShare; "`n=== ARP CACHE ==="; Get-NetNeighbor; " `n=== DNS CACHE ==="; Get-DnsClientCache } > "$home\Desktop\network_report.txt"
 
+после выполнения на рабочем столе появится файл с выводом
 ---
 
 (netsh wlan show profiles) | Select-String "\:(.+)$" | ForEach-Object {
