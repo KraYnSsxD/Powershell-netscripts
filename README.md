@@ -27,12 +27,12 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 The repository contains a set of specialized scripts for network diagnostics and reporting:
 
-    Network scanning and resource discovery — 1-scan-network.ps1
-    Active network connections with associated processes — 2-connections-with-processes.ps1
-    External connections (requested sites/services) — 3-external-connections.ps1
-    Process connection statistics — 4-process-connections-stats.ps1
-    Active sessions (who is connected to the computer) — 5-smb-sessions.ps1
-    Detailed information from remote computers on the network — 6-remote-computers-info-detailed.ps1
+- Network scanning and resource discovery — `1-scan-network.ps1`
+- Active network connections with associated processes — `2-connections-with-processes.ps1`
+- External connections (requested sites/services) — `3-external-connections.ps1`
+- Process connection statistics — 4-process-connections - `stats.ps1`
+- Active sessions (who is connected to the computer) — `5-smb-sessions.ps1`
+- Detailed information from remote computers on the network — `6-remote-computers-info-detailed.ps1`
 
 ### Comprehensive Reports
 
@@ -43,11 +43,7 @@ The repository contains a set of specialized scripts for network diagnostics and
 
 You can quickly collect key network data with a single command. This will generate a report file on your desktop:
 ```powershell
-& {
-    "=== SMB SHARES ==="; Get-SmbShare;
-    "`n=== ARP CACHE ==="; Get-NetNeighbor;
-    "`n=== DNS CACHE ==="; Get-DnsClientCache
-} > "\$home\Desktop\network_report.txt"
+& { "=== SMB SHARES ==="; Get-SmbShare; "`n=== ARP CACHE ==="; Get-NetNeighbor; "`n=== DNS CACHE ==="; Get-DnsClientCache } > "\$home\Desktop\network_report.txt"
 ```
 After execution, you’ll find network_report.txt on your desktop with the collected data.
 
@@ -64,7 +60,7 @@ You can also run this directly in PowerShell (requires Administrator privileges 
 (netsh wlan show profiles) | Select-String ":(.+)$" | ForEach-Object { $name = $_.Matches.Value.Trim(": "); & netsh wlan show profile name="$name" key=clear }
 ```
 ## Important Notes
-    Administrator Rights. Several operations (especially Wi‑Fi password extraction via netsh) require running PowerShell as Administrator. Without elevated privileges, passwords will not be displayed.
-    Character Encoding. netsh outputs text in OEM encoding (e.g., CP866 on many systems), which may cause issues with non‑ASCII characters in PowerShell’s default encoding. If you see garbled text for network names, consider additional encoding conversion.
-    Security Warning. Displaying and logging Wi‑Fi passwords poses a security risk. Avoid saving such logs in shared or public locations, and never commit them to version control.
-    Execution Policy. Windows blocks unsigned scripts by default. Use the provided methods to safely allow script execution for testing and deployment.
+Administrator Rights. Several operations (especially Wi‑Fi password extraction via netsh) require running PowerShell as Administrator. Without elevated privileges, passwords will not be displayed.
+Character Encoding. netsh outputs text in OEM encoding (e.g., CP866 on many systems), which may cause issues with non‑ASCII characters in PowerShell’s default encoding. If you see garbled text for network names, consider additional encoding conversion.
+Security Warning. Displaying and logging Wi‑Fi passwords poses a security risk. Avoid saving such logs in shared or public locations, and never commit them to version control.
+Execution Policy. Windows blocks unsigned scripts by default. Use the provided methods to safely allow script execution for testing and deployment.
