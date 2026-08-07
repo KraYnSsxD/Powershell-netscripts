@@ -1,4 +1,4 @@
-# krsz-netscripts
+# Powershell-netscripts
 
 PowerShell scripts for network scanning and diagnostics.
 ## Quick Start
