@@ -36,8 +36,8 @@ The repository contains a set of specialized scripts for network diagnostics and
 
 ### Comprehensive Reports
 
-    full-network-report.ps1 — Generates a full detailed network report.
-    gemini-full-network-report.ps1 — Generates a full detailed report (as processed by Google Gemini); output is saved to the same folder where the script is located.
+`full-network-report.ps1` — Generates a full detailed network report.
+`gemini-full-network-report.ps1` — Generates a full detailed report (as processed by Google Gemini); output is saved to the same folder where the script is located.
 
 ### One‑Command Network Scan
 
