@@ -53,7 +53,7 @@ After execution, you’ll find network_report.txt on your desktop with the colle
 Use `password-scan-windows.ps1` to display the Wi‑Fi password for the connected network.
 Note: This works only on Windows because it relies on the netsh utility.
 
-###One‑Liner Command
+### One‑Liner Command
 You can also run this directly in PowerShell (requires Administrator privileges to show passwords):
 
 ```powershell
